@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://dpg-d036f1i4d50c73c79qv0-a.frankfurt-postgres.render.com/kursovavlad # Додайте власний HOST та базу даних
+    username: vlad # додайте власний логін
+    password: 6txohcKpbC0sQW5Nsg2ujwxnOLjpN2zc # додайте власний пароль
+    driverClassName: org.postgresql.Driver
+  sql:
+    init:
+      platform: postgres
+
+
